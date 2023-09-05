@@ -41,26 +41,26 @@ function render(variables = {}) {
           <h4> ${
             variables.country == null ? "Your country" : variables.country
           }</h4>
-          <ul class="${variables.socialMediaPosition} ">
+          <ul class="${variables.socialMediaPosition} ">    
             <li><a href="${
-              variables.twitter == null
-                ? "https://twitter.com/4geeksacademy"
-                : variables.twitter
+              variables.twitter != null
+                ? "https://twitter.com/" + variables.twitter
+                : "https://twitter.com/"
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="${
-              variables.github == null
-                ? "https://github.com/4geeksacademy"
-                : variables.github
+              variables.github != null
+                ? "https://github.com/" + variables.github
+                : "https://github.com/"
             }"><i class="fab fa-github"></i></a></li>
             <li><a href="${
-              variables.linkedin == null
-                ? "https://linkedin.com/4geeksacademy"
-                : variables.linkedin
+              variables.linkedin != null
+                ? "https://linkedin.com/" + variables.linkedin
+                : "https://linkedin.com/"
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="${
               variables.instagram == null
-                ? "https://instagram.com/4geeksacademy"
-                : variables.instagram
+                ? "https://instagram.com/" + variables.instagram
+                : "https://instagram.com/"
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
